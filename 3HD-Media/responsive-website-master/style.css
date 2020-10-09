@@ -1,0 +1,268 @@
+
+
+
+
+/* Other Classe #f7f3f3, #f7f3f3  s for Page Styling */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+body {
+  
+  background: #007bff;
+  background: linear-gradient(to right, #0f6be4, #33AEFF);
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.navbar
+{
+    background-image: linear-gradient(to right, #fdfbfb, #fffdfd);
+    padding: 30;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 2px 2px 8px rgba(247, 39, 39, 0.5);
+    margin: 0px;
+}
+.navbar-brand
+{
+  height: 50px;
+  padding-bottom: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.button {
+  background-color: #d16d6d; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 10px 15px;
+  width: 125px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.navbar li a{
+  color: #ffff;
+  font-weight: 500;
+}
+
+
+
+ 
+
+
+                        
+#services
+ {
+   font-family: 'Nunito', sans-serif;
+   color: rgb(255, 255, 255);
+   
+
+}
+#services .services-top {
+    padding: 70px 0 50px;
+    
+}
+#services .services-list {
+    padding-top: 50px;
+}
+.services-list .service-block {
+    margin-bottom: 25px;
+    
+}
+.services-list .service-block .ico {
+    font-size: 38px;
+    float: left;
+}
+.services-list .service-block .text-block {
+    margin-left: 58px;
+    
+}
+.services-list .service-block .text-block .name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.services-list .service-block .text-block .info {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.services-list .service-block .text-block .text {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 300;
+}
+.highlight {
+    color: #d88787;
+    font-weight:bold;
+}                    
+
+
+
+.form-group
+{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  
+}
+
+.aboutus1
+{
+  font-family: 'Nunito', sans-serif;
+}
+
+.bg-white py-5,row align-items-center
+{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}
+
+.contact-form{
+  border-radius: 25px;
+  background: #fdfcfc;
+  
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+ 
+}
+
+
+
+.contact4 {
+  font-family: 'Nunito', sans-serif;
+	color: #ffffff;
+  font-weight: 300;
+}
+
+.contact4 h1, .contact4 h2, .contact4 h3, .contact4 h4, .contact4 h5, .contact4 h6 {
+  color: #ffffff;
+}
+
+.contact4 .font-weight-medium {
+	font-weight: 500;
+}
+
+.contact4 .form-control {
+  background: transparent;
+  border: 2px solid rgba(37, 36, 36, 0.7);
+}
+
+.contact4 .form-control:focus {
+  border-color:  #ffffff;
+}
+
+.contact4 input::-webkit-input-placeholder,
+.contact4 textarea::-webkit-input-placeholder {
+  color:  #ffffff;
+}
+
+.contact4 input:-ms-input-placeholder,
+.contact4 textarea:-ms-input-placeholder {
+  color:  #ffffff;
+}
+
+.contact4 input::placeholder,
+.contact4 textarea::placeholder {
+  color:  #ffffff;
+}
+
+.contact4 .right-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.contact4.bg-info {
+   background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.contact4 .text-inverse {
+    color: #3e4555 !important;
+}
+
+@media (min-width: 1024px) {
+	.contact4 .contact-box {
+    padding: 80px 105px 80px 0px;
+	}
+}
+
+@media (max-width: 767px) {
+	.contact4 .contact-box {
+    padding-left: 15px;
+    padding-right: 15px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.contact4 .right-image {
+			position: relative;
+			bottom: -95px;
+	}
+}
+
+.aboutus1
+{
+  color: rgb(255, 255, 255);
+  font-weight: 300 ;
+  
+}
+.wrapper{
+  margin-top: 0px;
+}
+
+.info
+{
+  color: rgb(255, 255, 255);
+
+}
+
+
+
+
+ li.nav-item:hover{
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #e99c9c;
+}
+
+li.nav-item {
+  width: 115px;
+  height: 40px;
+  margin: 1px;
+  float: left;
+  
+}
+
+li.nav-item  a{
+  color: #fcfafa;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}

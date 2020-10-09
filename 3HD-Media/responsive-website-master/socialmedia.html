@@ -1,0 +1,234 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+    <title>3HD media</title>
+    <link rel="icon" href="images/icon.png" type="image/icon type">
+<link rel='stylesheet' href='style.css' >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@500&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+</head>
+<div id="container">
+
+    <body id="body" >
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    
+            <div class="container">
+              <a class="navbar-brand" href="home.html" ><img src="images/logo.png" ></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="career.html">Career</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="internships.html">Internships</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="socialmedia.html"> Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="placements.html">Placements</a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+ 
+  <div class="aboutus1 " data-aos="fade-right">
+    <div class="container py-5">
+      <div class="row h-100 align-items-center py-3">
+        <div class="col-lg-6">
+          <h1 class="display-4"  >Social Media Courses</h1>
+          <p  >3HDMedia offers Part Time, Full time and special weekend Certification courses in Social media.
+            We also offer special in house training in corporates during or after working hours.
+            Duration of the Training: The duration and fee structure will depend on the topics selected.
+            The topics covered will be the following.</p>
+          
+                <ul  >
+    
+
+            <li>Introduction to Social Media Preview,</li>
+            <li> Creating a Social Media Strategy</li>
+            <li> Understanding Paid, Earned, and Owned Social Media</li>
+            <li> Social < Sharing Preview</li>
+            <li> Blogging for Business</li>
+            <li> Finding & Communicating with Influencers</li>
+         
+          </ul>
+         <h4  > Kindly fill up the form below and we shall revert back to you with 48 hours</h4>
+       
+        </div>
+            
+  
+     
+   
+  
+      
+        <div class="col-lg-6 d-none d-lg-block"><img  data-aos="fade-down" src="images/socialmedia.png" alt="" class="img-fluid"></div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <form class="gform pure-form pure-form-stacked" method="POST" id="registrationform" data-email="clopes024@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbzLQIO_WcG1V8_nIfT7eUtZ6OW-QK2Mm5Sd_x5Z-fnUV_Pnuz0u/exec">
+  <div class="container contact-form  py-4"  data-aos="fade-right">
+    <h4 class="text-center">Course Form</h4>
+        
+        <br>
+    <div class="form-group">
+        <label for="Name">Full Name*</label>
+        <input type="text"  name="Full Name"  id="userFullName"  class="form-control" required/>
+    </div>
+    <div class="form-group">
+      <label for="Name">PhoneNumber*</label>
+      <input type="tel" name="phoneNumber" class="form-control"  id="phoneNumber" placeholder="+91*********" required/>
+      
+  </div>       
+  <button type="button" id="sign-in-button"  class="btn btn-primary" onclick="submitPhoneNumberAuth()">
+     SEND OTP</button>
+     <br>
+     <br>
+  
+ 
+     <div class="form-group">
+      <label for="Name">Enter OTP</label>
+  <input type="text" class="form-control"  id="code"   />
+
+</div> 
+
+  <!-- Add two buttons to submit the inputs -->
+ 
+  <button  type="button" id="confirmcode"  class="btn btn-primary" onclick="submitPhoneNumberAuthCode()">
+    SUBMIT OTP
+  </button>
+  <div id="recaptcha-container"></div>
+  <br>
+    <div class="form-group">
+        <label for="Email">Email*</label>
+        <input type="Email" name="Email" id="userEmail"  class="form-control" required/>
+        </div>
+ 
+     <button id="submit" class="btn btn-primary">Submit Form</button>
+  
+  <div class="thankyou_message" style="display:none;">
+    <h4>Thanks for contacting us!
+      We will get back to you soon!</h4>
+  </div>
+</div>
+  </form>
+
+  
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+   var firebaseConfig = {
+    apiKey: "AIzaSyDzHhIiELekTldikoirUyM0yR5qJmyC85E",
+    authDomain: "hd-media-bf76c.firebaseapp.com",
+    databaseURL: "https://hd-media-bf76c.firebaseio.com",
+    projectId: "hd-media-bf76c",
+    storageBucket: "hd-media-bf76c.appspot.com",
+    messagingSenderId: "428393284997",
+    appId: "1:428393284997:web:43fea7926b9201ec7bf0ec",
+    measurementId: "G-6D3W3ERGJX"
+  };
+      firebase.initializeApp(firebaseConfig);
+       // Create a Recaptcha verifier instance globally
+      // Calls submitPhoneNumberAuth() when the captcha is verified
+      window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier("recaptcha-container",
+        {
+          size: "invisible",
+          callback: function(response) {
+            submitPhoneNumberAuth();
+          }
+        }
+      );
+
+      // This function runs when the 'sign-in-button' is clicked
+      // Takes the value from the 'phoneNumber' input and sends SMS to that phone number
+      function submitPhoneNumberAuth() {
+        var phoneNumber = document.getElementById("phoneNumber").value;
+        var appVerifier = window.recaptchaVerifier;
+        firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+          .then(function(confirmationResult) {
+            window.confirmationResult = confirmationResult;
+            alert("OTP SENT");
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+      }
+
+      // This function runs when the 'confirm-code' button is clicked
+      // Takes the value from the 'code' input and submits the code to verify the phone number
+      // Return a user object if the authentication was successful, and auth is complete
+      function submitPhoneNumberAuthCode() {
+        var code = document.getElementById("code").value;
+        confirmationResult.confirm(code).then(function(result) {
+            var user = result.user;
+            console.log(user);
+            alert("VERIFICATION SUCCESSFUL PROCEED FURTHER");
+            
+          })
+          .catch(function(error) {
+            alert("VERIFICATION FAILED PLEASE TRY AGAIN");
+            console.log(error);
+          });
+      }
+
+      //This function runs everytime the auth state changes. Use to verify if the user is logged in
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          
+          console.log("USER LOGGED IN");
+          
+        } else {
+          // No user is signed in.
+          
+          console.log("USER NOT LOGGED IN");
+      
+
+        }
+      });
+      
+      </script>
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+        <script src="socialmedia.js"></script>
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <p>Copyright 	&#169; 2020 All rights reserved</p>
+    </div>
+  </footer>
+    </body>
+    </html>
